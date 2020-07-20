@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+
+    <title>Translator</title>
+</head>
+
+<body>
+
+    <main id="app">
+        <nav class="toolbar">
+            <i class="material-icons tb-icon"><button type="button">translate</button></i>
+            <span class="tb-title">Translate API</span>
+        </nav>
+
+        <div class="container">
+            <input autofocus id="word" class="langer fromlang" placeholder="Type here to translate your text..."
+                onchange="loadDoc()" />
+             
+            <div class="langer tolang">
+                <div class="gg">
+                    <li class="lang" onclick="setLangfr()" id="fr">
+                        French
+                    </li>
+                    <li class="lang" onclick="setLangde()" id="de">
+                        german
+                    </li>
+                    <li class="lang" onclick="setLangja()" id="ja">
+                        japanese
+                    </li>
+                    <li class="lang" onclick="setLangar()" id="ar">
+                        arabic
+                    </li>
+                </div>
+
+                <div class="translation" id="translation"></div>
+                <i class="material-icons sync play" onclick="speak()"><button type="button">Speech</button></i>
+            </div>
+        </div>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

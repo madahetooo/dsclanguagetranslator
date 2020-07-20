@@ -1,0 +1,168 @@
+
+body {
+  margin: 0;
+}
+
+.toolbar {
+  height: 40px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  color: #6666ff;
+}
+
+.tb-icon {
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: -8px;
+  cursor: pointer;
+}
+
+.tb-icon:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tb-title {
+  font-family: Google Sans, sans-serif;
+  margin-left: 15px;
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 22px;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  padding: 1rem;
+}
+@media screen and (max-width: 720px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+.langer {
+  width: 100%;
+  margin-right: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+}
+
+.fromlang {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 1.25rem;
+  padding: 10px 10px 150px;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-appearance: none;
+}
+@media screen and (max-width: 720px) {
+  .fromlang {
+    margin: 10px 0;
+  }
+}
+
+.fromlang:focus {
+  border: 2px solid #6666ff;
+}
+
+.tolang {
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.06), 0 1px 5px 0 rgba(0, 0, 0, 0.06);
+}
+
+.gg {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+@media screen and (max-width: 720px) {
+  .gg {
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+}
+
+.lang {
+  list-style-type: none;
+  width: auto;
+  display: inline-block;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-family: Google Sans;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+}
+
+.selected {
+  border-bottom: 2px solid #6666ff;
+  color: #6666ff;
+}
+
+.translation {
+  padding: 20px;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 720px) {
+  .translation {
+    margin-bottom: 50px;
+  }
+}
+
+.sync {
+  position: absolute;
+  color: #6666ff;
+  top: 160px;
+  right: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+  .sync {
+    right: 10px;
+    top: 60px;
+  }
+}
+
+.unsync {
+  opacity: 0.3;
+  color: black;
+}
+
+.sync.play {
+  right: 45px;
+  color: black;
+  opacity: 0.3;
+}
+
+.sync.play:hover {
+  color: #6666ff;
+  opacity: 1;
+}
+
+.link {
+  bottom: 10px;
+  position: absolute;
+  margin-left: 10px;
+  font-family: Google Sans;
+  color: #6666ff;
+  text-decoration: none;
+}
+
+.link span {
+  margin-left: 32px;
+}
+
+.copy {
+  margin-top: -3px;
+  position: absolute;
+}
